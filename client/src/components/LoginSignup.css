@@ -1,0 +1,39 @@
+.container {
+    perspective: 1000px;
+}
+
+.card {
+    position: relative;
+    width: 24rem;
+    height: 24rem;
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
+}
+
+.card.rotate {
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #b6c1cf;
+  border-radius: 10px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #718096;
+}
+
+/* Enable scroll snap on the container */
+.scroll-snap {
+  scroll-snap-type: y mandatory;
+}
+
+/* Apply snap alignment to each card */
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.custom-container {
+  @apply w-full border-r-2 border-greyborder md:w-1/4;
+}
+
+/* Hides scrollbar for WebKit browsers (Chrome, Safari) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hides scrollbar for Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+
